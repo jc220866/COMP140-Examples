@@ -69,19 +69,3 @@ void Player::DisplayStats()
 	std::cout << "Charisma " << Charisma << std::endl;
 
 }
-
-void Player::CreateWeapon(const std::string name, float reloadTime, int ammo, int strength)
-{
-	CurrentWeaponName = name;
-	CurrentReloadTime = reloadTime;
-	CurrentAmmo = ammo;
-	CurrentWeaponStrength = strength;
-}
-
-void Player::DisplayWeapon()
-{
-	std::cout << "Name " << CurrentWeaponName << std::endl;
-	std::cout << "Reload Time " << CurrentReloadTime << std::endl;
-	std::cout << "Ammo " << CurrentAmmo << std::endl;
-	std::cout << "Strength " << CurrentWeaponStrength << std::endl;
-}

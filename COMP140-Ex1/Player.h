@@ -5,6 +5,7 @@
 class Player
 {
 public:
+
 	Player();
 	~Player();
 
@@ -28,12 +29,8 @@ public:
 	//Display Stats, print using cout
 	void DisplayStats();
 
-	//Create Weapon with the values passed in
-	void CreateWeapon(const std::string name, float reloadTime, int ammo, int strength);
-	//Display Weapons, print using cout
-	void DisplayWeapon();
-
 private:
+
 	int Health;
 	int Strength;
 	int Dexterity;
@@ -43,9 +40,4 @@ private:
 	int Charisma;
 
 	std::string Name;
-
-	std::string CurrentWeaponName;
-	float CurrentReloadTime;
-	int CurrentAmmo;
-	int CurrentWeaponStrength;
 };
